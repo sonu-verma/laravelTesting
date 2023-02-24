@@ -36,3 +36,10 @@ Route::delete('/book/{book}','ResultController@deleteBook');
 Route::get('/authors','AuthorController@index')->name('authors');
 Route::post('/author','AuthorController@store');
 
+Route::post('/checkout/{book}','BookCheckout@store');
+Route::post('/checkin/{book}','BookCheckin@store');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

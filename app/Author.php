@@ -21,4 +21,5 @@ class Author extends Model
 //    public function getDobAttribute($dob){
 //        $this->attributes['dob'] = Carbon::createFromFormat('Y-m-d',$dob)->format('Y-m-d');
 //    }
+
 }
